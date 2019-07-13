@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Александр Ильин](https://up.htmlacademy.ru/adaptive/17/user/962747).
-* Наставник: `Неизвестно`.
+- Студент: [Александр Ильин](https://up.htmlacademy.ru/adaptive/17/user/962747).
+- Наставник: [Дмитрий Аверин](https://htmlacademy.ru/profile/id1061531).
 
 ---
 
