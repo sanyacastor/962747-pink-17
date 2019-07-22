@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img
+          src="http://placehold.it/75x25"
+          alt="«Пинк»"
+          width="75"
+          height="25"
+          class="page-heade__logo-image"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <ul class="manin-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://up.htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Приложение «Пинк»
+      </h1>
+      <section class="hero">
+        <h2 class="hero__header">Взгляните на жизнь иначе!</h2>
+        <img
+          src="http://placehold.it/260x290"
+          width="290"
+          height="260"
+          alt="Телефон с приложением «Пинк»"
+          class="hero__image"
+        />
+        <a class="hero__download-button button" href="#">
+          Скачать пориложение
+        </a>
+        <ul class="hero__app-list app-list">
+          <li class="app-list__item">
+            <a href="#">Appstore</a>
+          </li>
+          <li class="app-list__item">
+            <a href="#">Android</a>
+          </li>
+          <li class="app-list__item">
+            <a href="#">Windows</a>
+          </li>
+        </ul>
+        <p class="hero__text">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">
+          Плюсы нашего приложения
+        </h2>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+        <p class="features__slogan">
+          Устали от серости мегаполиса? Нам есть, что вам предложить!
+        </p>
 
+        <ul class="features__list">
+          <li class="features__item features__item--fun">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию
+              буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="features__item features__item--change">
+            <h3 class="features__title">Меняет мир вокруг</h3>
+            <p class="features__description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              чтобы усилить эффект
+            </p>
+          </li>
+          <li class="features__item features__item--friends">
+            <h3 class="features__title">Заводит новых друзей</h3>
+            <p class="features__description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите новых
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
