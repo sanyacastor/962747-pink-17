@@ -1,3 +1,18 @@
-body {
-  background-color: #ffffff;
-}
+@import "blocks/visually-hidden.scss";
+@import "fonts.scss";
+@import "blocks/page/page.scss";
+@import "blocks/welcome-wrapper/welcome-wrapper.scss";
+@import "blocks/page-header/page-header.scss";
+@import "blocks/site-list/site-list.scss";
+@import "blocks/hero/hero.scss";
+@import "blocks/app-list/app-list.scss";
+@import "blocks/features/features.scss";
+@import "blocks/photo-card/photo-card.scss";
+@import "blocks/panorama/panorama.scss";
+@import "blocks/photo-stream/photo-stream.scss";
+@import "blocks/main-nav/main-nav.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/social/social.scss";
+@import "blocks/copyright/copyright.scss";
+@import "blocks/slogan/slogan.scss";
+@import "blocks/lead/lead.scss";

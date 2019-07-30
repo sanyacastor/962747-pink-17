@@ -3,67 +3,82 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img
-          src="http://placehold.it/75x25"
-          alt="«Пинк»"
-          width="75"
-          height="25"
-          class="page-heade__logo-image"
-        />
-      </a>
+
+  <body class="page">
+    <div class="welcome-wrapper">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <img
+            src="img/logo-pink-white-mobile.svg"
+            alt="«Пинк»"
+            width="75"
+            height="25"
+            class="page-header__logo-image"
+          />
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </header>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper" style="display: none;">
           <ul class="manin-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="#">Фотографии</a>
+              <a>Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
+              <a
+                class="site-list__link"
+                href="https://htmlacademy.ru/"
+                target="blank"
+              >
+                HTML Academy
+              </a>
             </li>
           </ul>
         </div>
       </nav>
-    </header>
 
-    <main class="page-main">
-      <section class="hero">
+      <section class="page__hero hero hero--photo">
         <h2 class="hero__header">
           Конкурс на самое безбашенное путешествие с Пинк
         </h2>
       </section>
-    </main>
-    <footer class="page-footer footer">
+    </div>
+
+    <main class="page-main"></main>
+    <footer class="page__footer footer">
       <a class="footer__logo" href="">
-        <img src="footer__logo-img" alt="" />
+        <img
+          class="footer__logo-img"
+          alt=""
+          src="img/logo-pink-blue-mobile.svg"
+        />
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--tw">Твиттер</a>
+            <a href="#" class="social__link social__link--tw"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--fb">Фейсбук</a>
+            <a href="#" class="social__link social__link--fb"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link nsocial__link--yt">Ютуб</a>
+            <a href="#" class="social__link social__link--yt"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
+        <p class="copyright__text">Разработано</p>
         <a href="https://htmlacademy.ru/" class="copyright__link">
-          HTML Academy
+          <img src="img/logo-htmlacademy.svg" alt="HTML Академия" srcset="" />
         </a>
       </div>
     </footer>

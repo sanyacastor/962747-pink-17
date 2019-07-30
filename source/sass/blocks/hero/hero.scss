@@ -1,0 +1,58 @@
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--photo {
+    padding-bottom: 50px;
+    padding-top: 35px;
+  }
+
+  &__header {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    align-self: flex-start;
+  }
+
+  &__download-button {
+    border: 3px solid #ffffff;
+    border-radius: 60px;
+    padding: 15px 30px;
+    line-height: 1;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    padding-bottom: 30px;
+  }
+
+  &__app-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    background: #1d2631;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  &__app-list {
+    margin-bottom: 20px;
+    padding: 60px;
+    width: 205px;
+  }
+}
