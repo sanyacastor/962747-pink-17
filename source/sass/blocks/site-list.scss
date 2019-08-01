@@ -1,0 +1,21 @@
+.site-list {
+  background: $color-blue-dark;
+  color: $color-white;
+  padding: 0;
+  margin: 0;
+}
+
+.site-list__item {
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 1px solid $color-blue-lite;
+  border-bottom: 1px solid #000000;
+  padding: 25px 0;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: $color-white;
+  cursor: pointer;
+}
