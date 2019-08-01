@@ -3,78 +3,104 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img
-          src="http://placehold.it/75x25"
-          alt="«Пинк»"
-          width="75"
-          height="25"
-          class="page-heade__logo-image"
-        />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
+
+  <body class="page">
+    <div class="welcome-wrapper">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <img
+            src="img/logo-pink-white-mobile.svg"
+            alt="«Пинк»"
+            class="page-heade__logo-image"
+          />
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </header>
+      <nav class="main-nav" style="display: none;">
         <div class="main-nav__wrapper">
           <ul class="manin-nav__list site-list">
             <li class="site-list__item">
               <a>Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="#">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://up.htmlacademy.ru/">HTML Academy</a>
+              <a
+                class="site-list__link"
+                href="https://up.htmlacademy.ru/"
+                target="blank"
+                >HTML Academy</a
+              >
             </li>
           </ul>
         </div>
       </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">
-        Приложение «Пинк»
-      </h1>
       <section class="hero">
-        <h2 class="hero__header">Взгляните на жизнь иначе!</h2>
+        <h2 class="hero__header">
+          Взгляните на жизнь <br />
+          иначе!
+        </h2>
         <img
-          src="http://placehold.it/260x290"
-          width="290"
-          height="260"
+          src="img/iphone-hand-mobile@1x.png"
+          width="260"
+          height="290"
           alt="Телефон с приложением «Пинк»"
           class="hero__image"
         />
-        <a class="hero__download-button button" href="#">
-          Скачать пориложение
-        </a>
-        <ul class="hero__app-list app-list">
-          <li class="app-list__item">
-            <a href="#">Appstore</a>
-          </li>
-          <li class="app-list__item">
-            <a href="#">Android</a>
-          </li>
-          <li class="app-list__item">
-            <a href="#">Windows</a>
-          </li>
-        </ul>
-        <p class="hero__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <div class="hero__app-wrapper">
+          <a class="hero__download-button button" href="#">
+            Скачать приложение
+          </a>
+          <ul class="hero__app-list app-list">
+            <li class="app-list__item">
+              <a
+                class="app-list__link app-list__link--app"
+                href="https://www.apple.com/ru/ios/app-store"
+                target="blank"
+              ></a>
+            </li>
+            <li class="app-list__item">
+              <a
+                class="app-list__link app-list__link--andr"
+                href="https://play.google.com/store/apps"
+                target="blank"
+              ></a>
+            </li>
+            <li class="app-list__item">
+              <a
+                class="app-list__link app-list__link--win"
+                href="https://www.microsoft.com/ru-ru/store/apps/windows"
+                target="blank"
+              ></a>
+            </li>
+          </ul>
+          <p class="hero__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </section>
+    </div>
+    <main class="main-page">
       <section class="features">
         <h2 class="visually-hidden">
           Плюсы нашего приложения
         </h2>
 
-        <p class="features__slogan">
-          Устали от серости мегаполиса? Нам есть, что вам предложить!
-        </p>
-
+        <div class="features__slogan slogan">
+          <p class="slogan__item">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="slogan__item">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
         <ul class="features__list">
           <li class="features__item features__item--fun">
             <h3 class="features__title">Поднимает настроение</h3>
@@ -96,6 +122,11 @@
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
               заводите новых
             </p>
+            <img
+              class="features__image"
+              src="img/iphone-screen-mobile@1x.png"
+              alt="Улыбка"
+            />
           </li>
         </ul>
       </section>

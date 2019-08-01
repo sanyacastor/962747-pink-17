@@ -2,57 +2,77 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img
-          src="http://placehold.it/75x25"
-          alt="«Пинк»"
-          width="75"
-          height="25"
-          class="page-heade__logo-image"
-        />
-      </a>
+
+  <body class="page">
+    <div class="welcome-wrapper">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <img
+            src="img/logo-pink-white-mobile.svg"
+            alt="«Пинк»"
+            width="75"
+            height="25"
+            class="page-header__logo-image"
+          />
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </header>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper" style="display: none;">
           <ul class="manin-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="#">Фотографии</a>
+              <a>Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
+              <a
+                class="site-list__link"
+                href="https://htmlacademy.ru/"
+                target="blank"
+              >
+                HTML Academy
+              </a>
             </li>
           </ul>
         </div>
       </nav>
-    </header>
-    <main class="page-main">
-      <section class="hero">
-        <h2 class="hero__header">Фотографии пользователей</h2>
+
+      <section class="pagehero hero hero--photo">
+        <h2 class="hero__header">
+          Фотографии<br />
+          пользователей
+        </h2>
       </section>
-      <section class="photo-stream">
-        <p class="photo-stream__lead">
+    </div>
+
+    <main class="main main-page">
+      <section class="page__lead lead">
+        <h2 class="visually-hidden">Ваши фотографии</h2>
+        <p class="lead__text">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как
           не хватает ваших?
         </p>
+      </section>
 
-        <section class="panorama">
-          <div class="panorama__inner">
-            <li class="panorama__item photo-card photo-card--panorama">
-              <img
-                src="http://placehold.it/320x150"
-                alt="Панорама дня"
-                class="photo-card__img photo-card__img--panorama"
-              />
+      <section class="panorama">
+        <h2 class="visually-hidden">Панорама дня</h2>
+        <div class="panorama__inner">
+          <div class="panorama__item photo-card photo-card--panorama">
+            <img
+              src="img/panorama-mobile@1x.jpg"
+              alt="Панорама дня"
+              class="photo-card__img photo-card__img--panorama"
+            />
+            <div class="photo-card__text-wrapper">
               <p class="photo-card__username">
                 Анна
                 <span class="photo-card__timestamp">(5 минут назад)</span>
@@ -61,152 +81,170 @@
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите
                 прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-              <p class="photo-card__likes">Нравится: 2015</p>
-              <button class="photo-card__like-button" type="button">
-                лайк
-              </button>
-            </li>
+              <div class="photo-card__like-wrapper">
+                <button class="photo-card__like-button" type="button"></button>
+                <p class="photo-card__likes">Нравится: 215</p>
+              </div>
+            </div>
           </div>
-        </section>
-
+        </div>
+      </section>
+      <section class="photo-stream">
+        <h2 class="visually-hidden">Лента фотографий</h2>
         <ul class="photo-stream__list">
           <li class="photo-stream__item photo-card">
             <img
-              src="http://placehold.it/280x180"
+              src="img/photo-car-mobile@1x.jpg"
               alt="Тесла"
               class="photo-card__img"
             />
-            <p class="photo-card__username">
-              Левон
-              <span class="photo-card__timestamp">(5 часов назад)</span>
-            </p>
-            <p class="photo-card__comment">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
-            <p class="photo-card__likes">Нравится: 356</p>
-            <button class="photo-card__like-button" type="button">
-              лайк
-            </button>
+            <div class="photo-card__text-wrapper">
+              <p class="photo-card__username">
+                Левон
+                <span class="photo-card__timestamp">(5 часов назад)</span>
+              </p>
+              <p class="photo-card__comment">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <div class="photo-card__like-wrapper">
+                <button class="photo-card__like-button" type="button"></button>
+                <p class="photo-card__likes">Нравится: 356</p>
+              </div>
+            </div>
           </li>
 
           <li class="photo-stream__item photo-card">
             <img
-              src="http://placehold.it/280x180"
+              src="img/photo-drumset-mobile@1x.jpg"
               alt="барабанная установка"
               class="photo-card__img"
             />
-            <p class="photo-card__username">
-              Антон
-              <span class="photo-card__timestamp">(12 часов назад)</span>
-            </p>
-            <p class="photo-card_comment">
-              Соседи будут рады!
-            </p>
-            <p class="photo-card__likes">Нравится: 666</p>
-            <button class="photo-card__like-button" type="button">
-              лайк
-            </button>
+            <div class="photo-card__text-wrapper">
+              <p class="photo-card__username">
+                Антон
+                <span class="photo-card__timestamp">(12 часов назад)</span>
+              </p>
+              <p class="photo-card_comment">
+                Соседи будут рады!
+              </p>
+              <div class="photo-card__like-wrapper">
+                <button class="photo-card__like-button" type="button"></button>
+                <p class="photo-card__likes">Нравится: 666</p>
+              </div>
+            </div>
           </li>
 
           <li class="photo-stream__item photo-card">
             <img
-              src="http://placehold.it/280x180"
+              src="img/photo-window-mobile@1x.jpg"
               alt="Стекляная крыша"
               class="photo-card__img"
             />
-            <p class="photo-card__username">
-              Борис
-              <span class="photo-card__timestamp">(20 часов назад)</span>
-            </p>
-            <p class="photo-card__comment">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <p class="photo-card__likes">Нравится: 215</p>
-            <button class="photo-card__like-button" type="button">
-              лайк
-            </button>
+            <div class="photo-card__text-wrapper">
+              <p class="photo-card__username">
+                Борис
+                <span class="photo-card__timestamp">(20 часов назад)</span>
+              </p>
+              <p class="photo-card__comment">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <div class="photo-card__like-wrapper">
+                <button class="photo-card__like-button" type="button"></button>
+                <p class="photo-card__likes">Нравится: 215</p>
+              </div>
+            </div>
           </li>
 
           <li class="photo-stream__item photo-card">
             <img
-              src="http://placehold.it/280x180"
+              src="img/photo-fair-mobile@1x.jpg"
               alt="Кубанская бахча"
               class="photo-card__img"
             />
-            <p class="photo-card__username">
-              Сергей
-              <span class="photo-card__timestamp">(25 часов назад)</span>
-            </p>
-            <p class="photo-card__comment">
-              Самая кубанская в мире!
-            </p>
-            <p class="photo-card__likes">Нравится: 4</p>
-            <button class="photo-card__like-button" type="button">
-              лайк
-            </button>
+            <div class="photo-card__text-wrapper">
+              <p class="photo-card__username">
+                Сергей
+                <span class="photo-card__timestamp">(25 часов назад)</span>
+              </p>
+              <p class="photo-card__comment">
+                Самая кубанская в мире!
+              </p>
+              <div class="photo-card__like-wrapper">
+                <button class="photo-card__like-button" type="button"></button>
+                <p class="photo-card__likes">Нравится: 4</p>
+              </div>
+            </div>
           </li>
 
           <li class="photo-stream__item photo-card">
             <img
-              src="http://placehold.it/280x180"
+              src="img/photo-pov-mobile@1x.jpg"
               alt="Горы"
               class="photo-card__img"
             />
-            <p class="photo-card__username">
-              Максим
-              <span class="photo-card__timestamp">(40 часов назад)</span>
-            </p>
-            <p class="photo-card__comment">
-              Где снег то?
-            </p>
-            <p class="photo-card__likes">Нравится: 150</p>
-            <button class="photo-card__like-button" type="button">
-              лайк
-            </button>
+            <div class="photo-card__text-wrapper">
+              <p class="photo-card__username">
+                Максим
+                <span class="photo-card__timestamp">(40 часов назад)</span>
+              </p>
+              <p class="photo-card__comment">
+                Где снег то?
+              </p>
+              <div class="photo-card__like-wrapper">
+                <button class="photo-card__like-button" type="button"></button>
+                <p class="photo-card__likes">Нравится: 150</p>
+              </div>
+            </div>
           </li>
 
           <li class="photo-stream__item photo-card">
             <img
-              src="http://placehold.it/280x180"
+              src="img/photo-wing-mobile@1x.jpg"
               alt="Закат из окна самолета"
               class="photo-card__img"
             />
-            <p class="photo-card__username">
-              Надежда
-              <span class="photo-card__timestamp">(45 часов назад)</span>
-            </p>
-            <p class="photo-card__comment">
-              Всем GM и взаимные лайки!
-            </p>
-            <p class="photo-card__likes">Нравится: 2560</p>
-            <button class="photo-card__like-button" type="button">
-              лайк
-            </button>
+            <div class="photo-card__text-wrapper">
+              <p class="photo-card__username">
+                Надежда
+                <span class="photo-card__timestamp">(45 часов назад)</span>
+              </p>
+              <p class="photo-card__comment">
+                Всем GM и взаимные лайки!
+              </p>
+              <div class="photo-card__like-wrapper">
+                <button class="photo-card__like-button" type="button"></button>
+                <p class="photo-card__likes">Нравится: 2560</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="page-footer footer">
-      <a class="footer__logo" href="">
-        <img src="footer__logo-img" alt="" />
+    <footer class="page__footer footer">
+      <a class="footer__logo" href="#">
+        <img
+          class="footer__logo-img"
+          alt="Логотип «Пинк»"
+          src="img/logo-pink-blue-mobile.svg"
+        />
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--tw">Твиттер</a>
+            <a href="#" class="social__link social__link--tw"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--fb">Фейсбук</a>
+            <a href="#" class="social__link social__link--fb"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link nsocial__link--yt">Ютуб</a>
+            <a href="#" class="social__link social__link--yt"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
+        <p class="copyright__text">Разработано</p>
         <a href="https://htmlacademy.ru/" class="copyright__link">
-          HTML Academy
+          <img src="img/logo-htmlacademy.svg" alt="HTML Академия" />
         </a>
       </div>
     </footer>

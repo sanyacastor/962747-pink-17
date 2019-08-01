@@ -1,0 +1,18 @@
+.page-header {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.page-header__toggle {
+  width: 50px;
+  height: 25px;
+  display: block;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("../../img/icon-menu-burger.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
