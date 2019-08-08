@@ -8,3 +8,11 @@
 .footer__logo {
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

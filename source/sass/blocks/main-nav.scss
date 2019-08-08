@@ -1,0 +1,66 @@
+.main-nav {
+  width: 320px;
+  min-width: 51px;
+}
+
+.main-nav__toggle {
+  display: block;
+  border: none;
+  margin: 18px 20px;
+}
+
+.main-nav--closed .main-nav__toggle {
+  width: 50px;
+  height: 25px;
+  background-image: url("../../img/icon-menu-burger.svg");
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/icon-menu-cross.svg");
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    width: 100%;
+
+    &--closed .site-list__item {
+      display: none;
+    }
+
+    &--opened .site-list__item {
+      display: block;
+    }
+  }
+
+  .main-nav__toggle {
+    align-self: flex-end;
+    position: absolute;
+    display: initial;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: block;
+    border: none;
+    top: 30px;
+    right: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

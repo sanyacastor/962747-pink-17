@@ -10,43 +10,39 @@
   <body class="page">
     <div class="welcome-wrapper">
       <header class="page-header">
-        <a class="page-header__logo">
-          <img
-            src="img/logo-pink-white-mobile.svg"
-            alt="«Пинк»"
-            width="75"
-            height="25"
-            class="page-header__logo-image"
-          />
-        </a>
-        <button class="page-header__toggle" type="button"></button>
-      </header>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper" style="display: none;">
-          <ul class="manin-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a
-                class="site-list__link"
-                href="https://htmlacademy.ru/"
-                target="blank"
-              >
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__inner">
+          <a class="page-header__logo" href="/">
+              <div class="page-header__logo-image" alt="«Пинк»"></div>
+            </a>
+            <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
+              <button class="main-nav__toggle" type="button"></button>
+              <div class="main-nav__wrapper">
+                <ul class="manin-nav__list site-list">
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="index.html">Главная</a>
+                  </li>
+                  <li class="site-list__item site-list__item--active">
+                    <a class="site-list__link">Фотографии</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="form.html">Конкурс</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a
+                      class="site-list__link"
+                      href="https://up.htmlacademy.ru/"
+                      target="blank"
+                      >HTML Academy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+      </div>
 
-      <section class="pagehero hero hero--photo">
+    </header>
+
+      <section class="hero hero--photo">
         <h2 class="hero__header">
           Фотографии<br />
           пользователей
@@ -249,4 +245,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/nav.js"/>
 </html>

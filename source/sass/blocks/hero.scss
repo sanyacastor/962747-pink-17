@@ -8,32 +8,18 @@
 .hero__header {
   font-size: 24px;
   font-weight: 300;
+  line-height: 1.3;
   color: $color-white;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .hero__image {
-  align-self: flex-start;
-}
-
-.hero__download-button {
-  border: 3px solid $color-white;
-  border-radius: 60px;
-  padding: 15px 30px;
-  line-height: 1;
-  color: $color-white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.hero__text {
-  font-size: 14px;
-  font-weight: 300;
-  color: $color-white;
-  padding-bottom: 30px;
+  align-self: center;
+  width: 260px;
+  height: 290px;
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .hero__app-wrapper {
@@ -52,7 +38,141 @@
   width: 205px;
 }
 
+.hero__download-button {
+  border: 3px solid $color-white;
+  border-radius: 50px;
+  padding: 15px 35px;
+  line-height: 1;
+  color: $color-white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 26px;
+
+  &:hover {
+    background: $color-white;
+    color: $color-pink;
+  }
+
+  &:active {
+    background: $color-white;
+    color: rgba($color-pink, 0.3);
+  }
+}
+
+.hero__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: $color-white;
+  margin: 0;
+  padding-bottom: 30px;
+  line-height: 1.6;
+}
+
 .hero--photo {
-  padding-bottom: 50px;
   padding-top: 35px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    text-align: center;
+    margin-top: 60px;
+    padding-left: 20px;
+    width: 300px;
+    position: relative;
+  }
+
+  .hero__app-wrapper {
+    padding: 0 30px;
+    background: transparent;
+    width: 350px;
+    z-index: 5;
+  }
+
+  .hero__download-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero__image {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    z-index: 1;
+    width: 670px;
+    height: 550px;
+    background-size: cover;
+    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+
+  .hero__header {
+    z-index: 5;
+    padding: 0 55px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .hero__text {
+    display: block;
+    width: 300px;
+    font-size: 18px;
+    line-height: 1.3;
+    padding-bottom: 110px;
+  }
+
+  .hero--photo {
+    font-size: 50px;
+    padding-bottom: 120px;
+    padding-top: 35px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    width: 950px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .hero__header {
+    width: 300px;
+    padding: 0;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 140px;
+    padding-bottom: 50px;
+    margin-right: auto;
+  }
+
+  .hero__image {
+    left: 160px;
+    width: 750px;
+    height: 650px;
+    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-position: bottom;
+  }
+
+  .hero__app-wrapper {
+    background: transparent;
+    width: 300px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    padding-bottom: 65px;
+  }
+
+  .hero--photo .hero__header {
+    width: 340px;
+    margin: 0 auto;
+  }
 }

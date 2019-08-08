@@ -6,8 +6,6 @@
 
 .photo-card__text-wrapper {
   box-sizing: border-box;
-  margin: 0 auto;
-  width: 280px;
   padding: 25px 15px;
   background: $color-gray;
 }
@@ -65,4 +63,7 @@
 
 .photo_card__img--panorama {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
 }

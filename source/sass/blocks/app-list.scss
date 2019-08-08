@@ -16,18 +16,24 @@
   &--app {
     background-image: url("../../img/logo-apple.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 0 0;
   }
 
   &--andr {
     background-image: url("../../img/logo-android.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 7px 7px;
   }
 
   &--win {
     background-image: url("../../img/logo-microsoft.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 15px 12px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .app-list {
+    margin-bottom: 35px;
   }
 }

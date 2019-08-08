@@ -8,6 +8,28 @@
   width: 280px;
 }
 
+.main-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .page__footer {
   margin-top: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__lead {
+    width: 450px;
+  }
+
+  .page__footer {
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__footer {
+    width: 940px;
+  }
 }
