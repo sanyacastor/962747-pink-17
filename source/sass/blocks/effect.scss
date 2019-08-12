@@ -1,0 +1,22 @@
+.effect__inner {
+  display: flex;
+}
+
+.effect__header {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.effect__text,
+.effect__image {
+  width: 50%;
+}
+
+.effect__text {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.effect__link {
+  color: $color-pink;
+}
