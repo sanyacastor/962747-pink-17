@@ -1,21 +1,56 @@
 .site-list {
+  list-style: none;
   background: $color-blue-dark;
   color: $color-white;
   padding: 0;
   margin: 0;
 }
 
-.site-list__item {
-  list-style: none;
+.site-list__link {
+  display: block;
   text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+  font-size: 18px;
+  font-weight: 800;
+
   text-align: center;
   border-top: 1px solid $color-blue-lite;
   border-bottom: 1px solid #000000;
-  padding: 25px 0;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  margin-left: -4px;
+
+  cursor: pointer;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $color-pink;
+  }
+
+  &[href]:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
-.site-list__link {
-  text-decoration: none;
-  color: $color-white;
-  cursor: pointer;
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+  }
+
+  .site-list__link {
+    background: transparent;
+    border-top: none;
+    border-bottom: none;
+    font-weight: 300;
+    text-transform: none;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid white;
+  }
 }

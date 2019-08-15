@@ -1,0 +1,121 @@
+.form {
+  width: 100%;
+  font-size: 14px;
+}
+
+.form__item--gray {
+  background: $color-gray;
+}
+
+.form__filedset {
+  border: none;
+}
+
+.form__item {
+  display: block;
+  border: none;
+}
+
+.form__heading {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  color: $color-pink;
+  text-align: center;
+}
+
+.form__label {
+  display: block;
+  text-transform: uppercase;
+  color: $color-pink;
+  margin-bottom: 15px;
+}
+
+.form__input {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 300;
+  width: 100%;
+  border: 2px solid $color-gray;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.check,
+.radio {
+  display: block;
+  font-size: 18px;
+  color: $color-blue-dark;
+  padding: 20px 0;
+  margin-left: 70px;
+}
+
+.check__input,
+.radio__input {
+  width: 0;
+  position: absolute;
+}
+
+.check__box {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+}
+
+.form__button {
+  border-radius: 3px;
+  text-transform: uppercase;
+  background: $color-green;
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  padding: 20px;
+  font-style: 18px;
+  font-weight: 800;
+}
+
+.textarea {
+  resize: none;
+  font-size: 18px;
+  color: $color-blue-dark;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  border: 2px solid $color-gray;
+  padding: 15px;
+}
+
+.form__fildset {
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label {
+    display: inline-block;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+
+  .form__item {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: white;
+  }
+
+  .form__fildset {
+    padding: 30px;
+    border: 2px solid $color-gray;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+}
