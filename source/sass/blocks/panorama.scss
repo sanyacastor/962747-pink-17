@@ -1,5 +1,19 @@
 .panorama {
   width: 100%;
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    background: $color-pink;
+    color: $color-white;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    top: 0;
+    right: 20px;
+  }
 }
 
 .panorama__item {
@@ -10,4 +24,26 @@
 
 .panorama__img {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama {
+    &::before {
+      top: 60px;
+      right: 20px;
+    }
+  }
+
+  .panorama__item {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama {
+    &::before {
+      top: 50px;
+      right: 130px;
+    }
+  }
 }
