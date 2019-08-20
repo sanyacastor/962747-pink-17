@@ -14,7 +14,7 @@
   background-position: 0 0;
   padding: 20px 20px;
   margin-bottom: 5px;
-  margin-top: 28px;
+  margin-top: 20px;
   margin-left: 20px;
 }
 
@@ -41,6 +41,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .page-header__inner {
     flex-direction: row;
     align-items: center;
@@ -51,6 +56,8 @@
   .page-header__nav {
     display: block;
     width: 620px;
+    margin-top: 20px;
+    padding-bottom: 20px;
   }
 
   .page-header__logo {
@@ -61,7 +68,7 @@
     background-position: 0 0;
     display: block;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 0;
     margin-left: 0;
     flex-grow: 1;
   }
