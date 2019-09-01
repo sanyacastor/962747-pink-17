@@ -236,6 +236,8 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
 
   .photo-editor__button {
+    width: 45%;
+
     &--publish {
       margin-bottom: 0;
     }
@@ -253,10 +255,6 @@ input[type="range"]::-webkit-slider-runnable-track {
   .photo-editor__form {
     width: 420px;
     padding-left: 0;
-  }
-
-  .photo-editor__button {
-    width: 45%;
   }
 
   .photo-editor__buttonbar {
