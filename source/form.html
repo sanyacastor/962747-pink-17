@@ -12,7 +12,26 @@
       <header class="page-header">
         <div class="page-header__inner">
           <a class="page-header__logo" href="/">
-            <div class="page-header__logo-image"></div>
+            <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                img/logo-pink-white-desktop.svg,
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                img/logo-pink-white-tablet.svg
+                "
+              />
+              <img
+                class="page-header__logo-image"
+                src="img/logo-pink-white-mobile.svg"
+                alt="Горы"
+                class="photo-card__img"
+              />
+            </picture>
           </a>
           <nav
             class="page-header__nav main-nav main-nav--opened main-nav--nojs"
@@ -238,11 +257,19 @@
     </main>
     <footer class="page__footer footer container">
       <a class="footer__logo" href="/">
-        <img
-          class="footer__logo-img"
-          alt=""
-          src="img/logo-pink-blue-mobile.svg"
-        />
+        <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="
+            img/logo-pink-blue-desktop.svg
+            "
+          />
+          <img
+            class="footer__logo-img"
+            alt="Логотип «Пинк»"
+            src="img/logo-pink-blue-mobile.svg"
+          />
+        </picture>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

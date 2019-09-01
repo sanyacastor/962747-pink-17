@@ -23,6 +23,10 @@
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-position: bottom left;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/iphone-hand-mobile@2x.png");
+  }
 }
 
 .hero__app {
@@ -32,6 +36,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.photo-editor__buttonbar {
+  display: flex;
 }
 
 .hero__download-button {
@@ -126,6 +134,10 @@
     background-image: url("../../img/iphone-hand-tablet@1x.png");
     background-position: bottom left;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/iphone-hand-tablet@2x.png");
+    }
   }
 
   .hero__header-text {
@@ -186,6 +198,10 @@
     height: 630px;
     background-image: url("../../img/iphone-hand-desktop@1x.png");
     background-position: bottom right;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/iphone-hand-desktop@2x.png");
+    }
   }
 
   .hero__app {

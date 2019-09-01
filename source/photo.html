@@ -12,7 +12,26 @@
       <header class="page-header">
         <div class="page-header__inner">
           <a class="page-header__logo" href="/">
-            <div class="page-header__logo-image"></div>
+            <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                img/logo-pink-white-desktop.svg,
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                img/logo-pink-white-tablet.svg
+                "
+              />
+              <img
+                class="page-header__logo-image"
+                src="img/logo-pink-white-mobile.svg"
+                alt="Горы"
+                class="photo-card__img"
+              />
+            </picture>
           </a>
           <nav
             class="page-header__nav main-nav main-nav--opened main-nav--nojs"
@@ -71,11 +90,29 @@
         <h2 class="visually-hidden">Панорама дня</h2>
         <div class="panorama__inner">
           <div class="panorama__item photo-card photo-card--panorama">
-            <img
-              src="img/panorama-mobile@1x.jpg"
-              alt="Панорама дня"
-              class="photo-card__img photo-card__img--panorama"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/panorama-desktop@1x.jpg 1x,
+                  img/panorama-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                  img/panorama-tablet@1x.jpg 1x,
+                  img/panorama-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@2x.jpg 2x"
+                alt="Панорама дня"
+                class="photo-card__img photo-card__img--panorama"
+                width="300px"
+              />
+            </picture>
             <div class="photo-card__text container">
               <p class="photo-card__username">
                 Анна
@@ -97,11 +134,29 @@
         <h2 class="visually-hidden">Лента фотографий</h2>
         <ul class="photo-stream__list">
           <li class="photo-stream__item photo-card">
-            <img
-              src="img/photo-car-mobile@1x.jpg"
-              alt="Тесла"
-              class="photo-card__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photo-car-desktop@1x.jpg 1x,
+                  img/photo-car-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                  img/photo-car-tablet@1x.jpg 1x,
+                  img/photo-car-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/photo-car-mobile@1x.jpg"
+                srcset="img/photo-car-mobile@2x.jpg 2x"
+                alt="Тесла"
+                class="photo-card__img"
+                width="300px"
+              />
+            </picture>
             <div class="photo-card__text">
               <p class="photo-card__username">
                 Левон
@@ -118,11 +173,29 @@
           </li>
 
           <li class="photo-stream__item photo-card">
-            <img
-              src="img/photo-drumset-mobile@1x.jpg"
-              alt="барабанная установка"
-              class="photo-card__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photo-drumset-desktop@1x.jpg 1x,
+                  img/photo-drumset-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                  img/photo-drumset-tablet@1x.jpg 1x,
+                  img/photo-drumset-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/photo-drumset-mobile@1x.jpg"
+                srcset="img/photo-drumset-mobile@2x.jpg 2x"
+                alt="барабанная установка"
+                class="photo-card__img"
+                width="300px"
+              />
+            </picture>
             <div class="photo-card__text">
               <p class="photo-card__username">
                 Антон
@@ -139,11 +212,29 @@
           </li>
 
           <li class="photo-stream__item photo-card">
-            <img
-              src="img/photo-window-mobile@1x.jpg"
-              alt="Стекляная крыша"
-              class="photo-card__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photo-window-desktop@1x.jpg 1x,
+                  img/photo-window-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                  img/photo-window-tablet@1x.jpg 1x,
+                  img/photo-window-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/photo-window-mobile@1x.jpg"
+                srcset="img/photo-window-mobile@2x.jpg 2x"
+                alt="Стекляная крыша"
+                class="photo-card__img"
+                width="300px"
+              />
+            </picture>
             <div class="photo-card__text">
               <p class="photo-card__username">
                 Борис
@@ -160,11 +251,30 @@
           </li>
 
           <li class="photo-stream__item photo-card">
-            <img
-              src="img/photo-fair-mobile@1x.jpg"
-              alt="Кубанская бахча"
-              class="photo-card__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photo-fair-desktop@1x.jpg 1x,
+                  img/photo-fair-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                  img/photo-fair-tablet@1x.jpg 1x,
+                  img/photo-fair-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/photo-fair-mobile@1x.jpg"
+                srcset="img/photo-fair-mobile@2x.jpg 2x"
+                alt="Кубанская бахча"
+                class="photo-card__img"
+                width="300px"
+              />
+            </picture>
+
             <div class="photo-card__text">
               <p class="photo-card__username">
                 Сергей
@@ -181,11 +291,29 @@
           </li>
 
           <li class="photo-stream__item photo-card">
-            <img
-              src="img/photo-pov-mobile@1x.jpg"
-              alt="Горы"
-              class="photo-card__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photo-pov-desktop@1x.jpg 1x,
+                  img/photo-pov-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                  img/photo-pov-tablet@1x.jpg 1x,
+                  img/photo-pov-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/photo-pov-mobile@1x.jpg"
+                srcset="img/photo-pov-mobile@2x.jpg 2x"
+                alt="Горы"
+                class="photo-card__img"
+                width="300px"
+              />
+            </picture>
             <div class="photo-card__text">
               <p class="photo-card__username">
                 Максим
@@ -202,11 +330,29 @@
           </li>
 
           <li class="photo-stream__item photo-card">
-            <img
-              src="img/photo-wing-mobile@1x.jpg"
-              alt="Закат из окна самолета"
-              class="photo-card__img"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photo-wing-desktop@1x.jpg 1x,
+                  img/photo-wing-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                  img/photo-wing-tablet@1x.jpg 1x,
+                  img/photo-wing-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/photo-wing-mobile@1x.jpg"
+                srcset="img/photo-wing-mobile@2x.jpg 2x"
+                alt="Закат из окна самолета"
+                class="photo-card__img"
+                width="300px"
+              />
+            </picture>
             <div class="photo-card__text">
               <p class="photo-card__username">
                 Надежда
@@ -223,14 +369,69 @@
           </li>
         </ul>
       </section>
+      <section class="lead">
+        <p>
+          Затмите их всех! <br />
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </section>
+      <section class="photo-editor">
+        <div class="container">
+          <div class="photo-editor__inner">
+            <div class="photo-editor__pic">
+              <img src="../../img/photo-road-mobile@1x.jpg" alt="" />
+            </div>
+            <div class="photo-editor__controls">
+              <form class="photo-editor__form" action="">
+                <div class="photo-editor__toolbar">
+                  <div class="photo-editor__range-item">
+                    <a href="" class="photo-editor__icon photo-editor__icon--crop"></a>
+                    <input class="photo-editor__range photo-editor__range--crop" type="range" name="crop" min="1" value="50" max ="100"id="" />
+                  </div>
+                  <div class="photo-editor__range-item">
+                    <a href="" class="photo-editor__icon photo-editor__icon--fill"></a>
+                    <input class="photo-editor__range photo-editor__range--fill" type="range" name="fill" id="" />
+                  </div>
+                  <div class="photo-editor__range-item">
+                    <a href="" class="photo-editor__icon photo-editor__icon--contrast"></a>
+                    <input class="photo-editor__range photo-editor__range--contrast" type="range" name="contrast" id="" />
+                  </div>
+                </div>
+                <div class="photo-editor__buttonbar">
+                  <button
+                    type="submit"
+                    class="photo-editor__button photo-editor__button--publish"
+                  >
+                    Запостить
+                  </button>
+                  <button
+                    type="button"
+                    class="photo-editor__button photo-editor__button--cancel"
+                  >
+                    Отмена
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="page__footer footer container">
       <a class="footer__logo" href="#">
-        <img
-          class="footer__logo-img"
-          alt="Логотип «Пинк»"
-          src="img/logo-pink-blue-mobile.svg"
-        />
+        <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="
+            img/logo-pink-blue-desktop.svg
+            "
+          />
+          <img
+            class="footer__logo-img"
+            alt="Логотип «Пинк»"
+            src="img/logo-pink-blue-mobile.svg"
+          />
+        </picture>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -253,5 +454,6 @@
       </div>
     </footer>
     <script src="js/nav.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
