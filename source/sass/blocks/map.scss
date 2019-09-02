@@ -1,0 +1,48 @@
+.map {
+  position: relative;
+  width: 100%;
+}
+
+.map__inner {
+  display: block;
+  width: 100%;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+.map__decore {
+  z-index: 1;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .map__inner {
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+    min-height: 400px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__inner {
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    // min-height: 400px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.jpg");
+    }
+  }
+}

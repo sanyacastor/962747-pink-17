@@ -91,10 +91,6 @@
     min-height: 510px;
   }
 
-  .photo-stream .photo-card__img {
-    min-height: 300px;
-  }
-
   .photo-stream .photo-card__text {
     padding: 23px 30px;
     position: relative;
@@ -120,9 +116,5 @@
 @media (min-width: $desktop-width) {
   .photo-card__img--panorama {
     min-height: 500px;
-  }
-
-  .photo-stream .photo-card__img {
-    height: 390px;
   }
 }
