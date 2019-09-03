@@ -96,7 +96,7 @@
 
 @media (min-width: $tablet-width) {
   .hero {
-    margin-top: 50px;
+    margin-top: 55px;
     position: relative;
   }
 
@@ -141,7 +141,7 @@
   }
 
   .hero__header-text {
-    font-size: 50px;
+    font-size: 40px;
     padding: 0 40px;
     font-weight: 300;
     line-height: 1.2;
@@ -157,10 +157,14 @@
   }
 
   .hero--photo {
-    font-size: 20px;
-    padding-bottom: 80px;
     padding-top: 0;
     margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .hero--photo .hero__header {
+    font-weight: 300;
+    font-size: 50px;
   }
 
   .hero__header-inner--photo {

@@ -1,8 +1,10 @@
 .prices {
+  box-sizing: border-box;
   position: relative;
   background: $color-gray;
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .prices__decore {
@@ -12,4 +14,14 @@
   left: 0;
   width: 100%;
   height: auto;
+}
+
+.prices__table {
+  // min-width: 620px;
+  // transform: translateX(-230px);
+}
+
+.table__header {
+  // background: coral;
+  width: 320px;
 }

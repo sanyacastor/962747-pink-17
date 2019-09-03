@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .slider__dot {
@@ -14,15 +15,16 @@
   height: 5px;
   background: $color-gray-dark;
   border-radius: 50%;
-  margin: 5px;
+  margin: 10px;
 }
 
 .slider__dot--active {
-  border: 2px solid $color-blue-dark;
+  border: 3px solid $color-blue-dark;
   background: $color-white;
 }
 
 .slider__button {
+  display: none;
   width: 30px;
   height: 45px;
   position: absolute;

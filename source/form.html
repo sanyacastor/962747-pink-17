@@ -13,7 +13,7 @@
         <div class="page-header__inner">
           <a class="page-header__logo" href="/">
             <picture>
-                <source
+              <source
                 media="(min-width: 1200px)"
                 srcset="
                 img/logo-pink-white-desktop.svg,
@@ -72,8 +72,8 @@
     </div>
 
     <main class="page">
-      <div class="lead">
-        <div class="container">
+      <div class="container">
+        <div class="lead">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!
         </div>
@@ -82,7 +82,7 @@
         <div class="form__item form__item--name">
           <div class="form__wrapper">
             <fieldset class="form__fildset">
-              <label class="form__item">
+              <label class="form__fildset-item">
                 <span class="form__label">Фамилия:</span>
                 <input
                   class="form__input form__input--text"
@@ -91,7 +91,7 @@
                   placeholder="Укажите фамилию *"
                 />
               </label>
-              <label class="form__item">
+              <label class="form__fildset-item">
                 <span class="form__label">Имя:</span>
                 <input
                   class="form__input form__input--text"
@@ -100,7 +100,7 @@
                   placeholder="Введите ваше имя *"
                 />
               </label>
-              <label class="form__item">
+              <label class="form__fildset-item">
                 <span class="form__label">Отчество:</span>
                 <input
                   class="form__input form__input--text"
@@ -186,9 +186,11 @@
         <div class="form__item form__item--contacts">
           <div class="form__wrapper">
             <fieldset class="form__fildset">
-              <legend class="form__legend">Контактная информация</legend>
+              <legend class="form__legend">
+                Контактная информация
+              </legend>
               <div class="form__fildset-wrapper">
-                <label class="form__item">
+                <label class="form__fildset-item">
                   <span class="form__label">Номер телефона</span>
                   <input
                     class="form__input form__input--text"
@@ -197,7 +199,7 @@
                     placeholder="Номер, пожалуйста"
                   />
                 </label>
-                <label class="form__item">
+                <label class="form__fildset-item">
                   <span class="form__label">Адрес почты</span>
                   <input
                     class="form__input form__input--text"
@@ -246,11 +248,17 @@
               <legend class="form__legend">
                 Опишите свои эмоции
               </legend>
-              <textarea class="textarea">
-                Можно прям в красках, не стесняясь в выражениях
-              </textarea>
+              <div class="form__fildset-wrapper">
+                <textarea class="form__textarea">
+Можно прям в красках, не стесняясь в выражениях
+                </textarea>
+              </div>
             </fieldset>
             <button class="form__button">Отправить форму</button>
+            <p class="form__required">
+              <span class="form__required-star">*</span>
+              – Поля обязательные для заполнения
+            </p>
           </div>
         </div>
       </form>
@@ -258,7 +266,7 @@
     <footer class="page__footer footer container">
       <a class="footer__logo" href="/">
         <picture>
-            <source
+          <source
             media="(min-width: 1200px)"
             srcset="
             img/logo-pink-blue-desktop.svg

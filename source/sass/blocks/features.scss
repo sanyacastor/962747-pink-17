@@ -59,13 +59,14 @@
 }
 
 .features__pic {
+  margin-top: 25px;
   width: 160px;
   background-size: cover;
   z-index: 5;
   overflow: hidden;
   background-image: url("../../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  min-height: 250px;
+  min-height: 285px;
   background-position: 0 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

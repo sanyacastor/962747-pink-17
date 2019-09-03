@@ -9,15 +9,23 @@
   justify-content: space-between;
 }
 
-.social__item {
-  border: 3px solid rgba($color-blue-dark, 0.1);
-  border-radius: 50%;
-}
-
 .social__link {
   display: block;
+
+  border: 3px solid rgba($color-blue-dark, 0.1);
+  border-radius: 50%;
+
   width: 45px;
   height: 45px;
+
+  &:hover,
+  &:focus {
+    border: 3px solid rgba($color-blue-dark, 1);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--tw {
     background-image: url("../../img/icon-twitter.svg");
