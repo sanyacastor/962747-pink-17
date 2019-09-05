@@ -14,3 +14,55 @@
   line-height: 2.1;
   margin-bottom: 30px;
 }
+
+.reviews__age {
+  display: none;
+}
+
+.reviews__quoute {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 0;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__comment {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .reviews__name {
+    font-size: 20px;
+  }
+
+  .reviews__age {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__quoute {
+    display: inline-block;
+    align-self: center;
+    margin-bottom: 35px;
+  }
+
+  .reviews__comment {
+    padding: 0 100px;
+  }
+
+  .reviews__age {
+    font-size: 18px;
+  }
+}

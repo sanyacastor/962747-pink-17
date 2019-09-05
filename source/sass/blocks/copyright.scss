@@ -7,3 +7,16 @@
 .copyright__text {
   margin-right: 20px;
 }
+
+.copyright__logo {
+  fill: $color-pink;
+
+  &:hover,
+  &:focus {
+    fill: $color-blue-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

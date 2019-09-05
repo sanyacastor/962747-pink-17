@@ -25,3 +25,12 @@
   // background: coral;
   width: 320px;
 }
+
+@media (min-width: $tablet-width) {
+  .prices {
+    padding-top: 65px;
+  }
+}
+
+.table__value {
+}

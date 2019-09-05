@@ -4,27 +4,90 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
   display: block;
   border: none;
-  margin: 18px 20px;
-}
-
-.main-nav--closed .main-nav__toggle {
-  width: 50px;
-  height: 25px;
-  background-image: url("../../img/icon-menu-burger.svg");
-  background-color: transparent;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  right: 10px;
+  top: 25px;
 }
 
 .main-nav--opened .main-nav__toggle {
+  width: 50px;
+  height: 4px;
+  // background-image: url("../../img/icon-menu-burger.svg");
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    top: 20px;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    top: 10px;
+    left: 0;
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    background: $color-pink;
+
+    &::before,
+    &::after {
+      background: $color-pink;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
   width: 24px;
   height: 24px;
-  background-image: url("../../img/icon-menu-cross.svg");
   background-color: transparent;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: " ";
+    height: 30px;
+    width: 4px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: " ";
+    height: 30px;
+    width: 4px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      background: $color-pink;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -33,20 +96,12 @@
     width: 100%;
 
     &--closed .site-list__item {
-      display: none;
+      display: block;
     }
 
     &--opened .site-list__item {
-      display: block;
+      display: none;
     }
-  }
-
-  .main-nav__toggle {
-    align-self: flex-end;
-    position: absolute;
-    display: initial;
-    right: 0;
-    top: 0;
   }
 }
 
@@ -54,8 +109,8 @@
   .main-nav__toggle {
     display: block;
     border: none;
-    top: 30px;
-    right: 5px;
+    top: 45px;
+    right: 10px;
   }
 }
 

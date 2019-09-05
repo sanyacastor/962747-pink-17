@@ -170,6 +170,7 @@
 }
 
 .form__button {
+  cursor: pointer;
   border-radius: 3px;
   text-transform: uppercase;
   background: $color-green;
@@ -179,6 +180,20 @@
   padding: 20px;
   font-size: 18px;
   font-weight: 800;
+
+  &:hover,
+  &:focus {
+    background: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+.form__button:disabled {
+  background: $color-gray-dark;
+  color: #ffffff;
 }
 
 .form__textarea {
