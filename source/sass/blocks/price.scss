@@ -28,9 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .prices {
+    position: relative;
     padding-top: 65px;
   }
-}
-
-.table__value {
 }

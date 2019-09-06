@@ -158,22 +158,22 @@
           </div>
         </div>
         <div class="features__wrapper">
-          <svg
-            class="features__decore"
-            version="1.0"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            width="1200px"
-            height="94.074px"
-            viewBox="0 0 1200 94.074"
-            enable-background="new 0 0 1200 94.074"
-            xml:space="preserve"
-          >
-            <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 " />
-          </svg>
+            <svg class="features__decore" width="100px" height="94.074px">
+                <g
+
+                  version="1.0"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 1200 94.074"
+                  enable-background="new 0 0 1200 94.074"
+                  xml:space="preserve"
+                >
+                  <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 " />
+                </g>
+              </svg>
           <div class="container">
             <div class="features__inner">
               <ul class="features__list">
@@ -247,8 +247,9 @@
         </div>
       </section>
       <section class="prices">
-        <svg
-          class="prices__decore"
+        <svg class="prices__decore">
+        <g
+
           version="1.0"
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +263,8 @@
           xml:space="preserve"
         >
           <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 " />
-        </svg>
+        </g>
+      </svg>
         <div class="prices__inner slider">
           <div class="container">
             <table class="prices__table table">
@@ -394,23 +396,11 @@
         </div>
       </section>
       <section class="map">
-        <svg
-          class="map__decore"
-          version="1.0"
-          id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          width="595.28px"
-          height="61.905px"
-          viewBox="0 0 595.28 61.905"
-          enable-background="new 0 0 595.28 61.905"
-          xml:space="preserve"
-        >
+        <svg class="map__decore" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905">
+        <g>
           <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 " />
-        </svg>
-
+        </g>
+      </svg>
         <a class="map__inner"> </a>
       </section>
       <footer class="page__footer footer container">
@@ -446,13 +436,14 @@
           <p class="copyright__text">Разработано</p>
           <a href="https://htmlacademy.ru/" class="copyright__link">
             <svg class="copyright__logo" width="26.943px" height="34.09px">
-              <use xlink:href="../../img/sprite.svg#logo_academy" />
+              <use xlink:href="img/sprite.svg#logo_academy" />
             </svg>
           </a>
         </div>
       </footer>
     </main>
     <script src="js/nav.js"></script>
+    <script src="js/svgxuse.min.js"></script>
     <script src="js/picturefill.js"></script>
   </body>
 </html>

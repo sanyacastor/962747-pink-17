@@ -601,7 +601,9 @@
                         <use xlink:href="../../img/sprite.svg#e_crop"/>
                       </svg>
                     </a>
-                    <input class="photo-editor__range photo-editor__range--crop" type="range" name="crop" min="1" value="50" max ="100"id="" />
+                    <label class="photo-editor__range-label">
+                      <input class="photo-editor__range photo-editor__range--crop" type="range" name="crop" min="1" value="50" max ="100"id="" />
+                    </label>
                   </div>
                   <div class="photo-editor__range-item">
                     <a href="" class="photo-editor__icon photo-editor__icon--fill">
@@ -609,15 +611,19 @@
                         <use xlink:href="../../img/sprite.svg#e_fill"/>
                       </svg>
                     </a>
-                    <input class="photo-editor__range photo-editor__range--fill" type="range" name="fill" id="" />
+                    <label class="photo-editor__range-label">
+                      <input class="photo-editor__range photo-editor__range--fill" type="range" name="fill" id="" />
+                    </label>
                   </div>
                   <div class="photo-editor__range-item">
                     <a href="" class="photo-editor__icon photo-editor__icon--contrast">
-                      <svg width="38px" height="38px">
-                        <use xlink:href="../../img/sprite.svg#e_contrast"/>
+                      <svg width="48px" height="48px">
+                        <use xlink:href="img/sprite.svg#e_contrast"/>
                       </svg>
                     </a>
-                    <input class="photo-editor__range photo-editor__range--contrast" type="range" name="contrast" id="" />
+                    <label class="photo-editor__range-label">
+                      <input class="photo-editor__range photo-editor__range--contrast" type="range" name="contrast" id="" />
+                    </label>
                   </div>
                 </div>
                 <div class="photo-editor__buttonbar">
@@ -679,6 +685,7 @@
       </div>
     </footer>
     <script src="js/nav.js"></script>
+    <script src="js/svgxuse.min.js"></script>
     <script src="js/picturefill.js"></script>
   </body>
 </html>
