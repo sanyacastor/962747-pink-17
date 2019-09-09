@@ -1,9 +1,29 @@
 .copyright {
   display: flex;
-  padding: 30px 0;
+  // padding: 30px 0;
   align-items: center;
 }
 
 .copyright__text {
   margin-right: 20px;
+}
+
+.copyright__logo {
+  fill: $color-pink;
+
+  &:hover,
+  &:focus {
+    fill: $color-blue-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    font-size: 16px;
+    margin-right: 10px;
+  }
 }

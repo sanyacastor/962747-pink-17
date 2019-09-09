@@ -6,23 +6,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .slider__dot {
   display: block;
-  width: 5px;
-  height: 5px;
-  background: $color-gray-dark;
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  background: rgba($color-blue-dark, 0.3);
   border-radius: 50%;
-  margin: 5px;
+  margin: 10px;
+
+  &:hover {
+    background: rgba($color-gray-dark, 0.5);
+  }
+
+  &:active {
+    background: rgba($color-gray-dark, 0.1);
+  }
 }
 
 .slider__dot--active {
-  border: 2px solid $color-blue-dark;
+  border: 3px solid $color-blue-dark;
   background: $color-white;
 }
 
 .slider__button {
+  cursor: pointer;
+  display: none;
   width: 30px;
   height: 45px;
   position: absolute;
@@ -37,5 +49,21 @@
   &--prev {
     left: 0;
     background-image: url("../../img/icon-review-arrow-left.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__controls {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__button {
+    display: block;
+  }
+
+  .slider__controls {
+    margin-bottom: 0;
   }
 }

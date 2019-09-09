@@ -4,27 +4,52 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
   display: block;
   border: none;
-  margin: 18px 20px;
+  right: 10px;
+  top: 25px;
+  margin: 0;
+  padding: 0;
 }
 
-.main-nav--closed .main-nav__toggle {
-  width: 50px;
-  height: 25px;
-  background-image: url("../../img/icon-menu-burger.svg");
-  background-color: transparent;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.main-nav--opened .main-nav__toggle--cross {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle--burger {
+  display: none;
 }
 
 .main-nav--opened .main-nav__toggle {
-  width: 24px;
-  height: 24px;
-  background-image: url("../../img/icon-menu-cross.svg");
+  fill: #ffffff;
+  width: 50px;
+  height: 25px;
   background-color: transparent;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    fill: $color-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  fill: #ffffff;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+
+  &:hover {
+    fill: $color-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -33,20 +58,12 @@
     width: 100%;
 
     &--closed .site-list__item {
-      display: none;
+      display: block;
     }
 
     &--opened .site-list__item {
-      display: block;
+      display: none;
     }
-  }
-
-  .main-nav__toggle {
-    align-self: flex-end;
-    position: absolute;
-    display: initial;
-    right: 0;
-    top: 0;
   }
 }
 
@@ -54,8 +71,8 @@
   .main-nav__toggle {
     display: block;
     border: none;
-    top: 30px;
-    right: 5px;
+    top: 45px;
+    right: 10px;
   }
 }
 

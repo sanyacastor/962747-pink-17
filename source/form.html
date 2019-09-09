@@ -12,31 +12,35 @@
       <header class="page-header">
         <div class="page-header__inner">
           <a class="page-header__logo" href="/">
-            <picture>
-                <source
-                media="(min-width: 1200px)"
-                srcset="
-                img/logo-pink-white-desktop.svg,
-                "
-              />
-              <source
-                media="(min-width: 660px)"
-                srcset="
-                img/logo-pink-white-tablet.svg
-                "
-              />
-              <img
-                class="page-header__logo-image"
-                src="img/logo-pink-white-mobile.svg"
-                alt="Горы"
-                class="photo-card__img"
-              />
-            </picture>
+            <svg class="page-header__logo--mob" width="75px" height="23px">
+              <use xlink:href="img/sprite.svg#logo-header--mob" />
+            </svg>
+            <svg class="page-header__logo--tab" width="147px" height="41px">
+              <use xlink:href="img/sprite.svg#logo-header--tab" />
+            </svg>
+            <svg class="page-header__logo--des" width="147px" height="41px">
+              <use xlink:href="img/sprite.svg#logo-header--des" />
+            </svg>
           </a>
           <nav
             class="page-header__nav main-nav main-nav--opened main-nav--nojs"
           >
-            <button class="main-nav__toggle" type="button"></button>
+            <button class="main-nav__toggle" type="button">
+              <svg
+                class="main-nav__toggle--burger"
+                width="49.945px"
+                height="24.007px"
+              >
+                <use xlink:href="img/sprite.svg#icon-burger" />
+              </svg>
+              <svg
+                class="main-nav__toggle--cross"
+                width="23.867px"
+                height="23.867px"
+              >
+                <use xlink:href="img/sprite.svg#icon-cross" />
+              </svg>
+            </button>
             <div class="main-nav__wrapper">
               <ul class="manin-nav__list site-list">
                 <li class="site-list__item">
@@ -72,8 +76,8 @@
     </div>
 
     <main class="page">
-      <div class="lead">
-        <div class="container">
+      <div class="container">
+        <div class="lead">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!
         </div>
@@ -82,7 +86,7 @@
         <div class="form__item form__item--name">
           <div class="form__wrapper">
             <fieldset class="form__fildset">
-              <label class="form__item">
+              <label class="form__fildset-item">
                 <span class="form__label">Фамилия:</span>
                 <input
                   class="form__input form__input--text"
@@ -91,7 +95,7 @@
                   placeholder="Укажите фамилию *"
                 />
               </label>
-              <label class="form__item">
+              <label class="form__fildset-item">
                 <span class="form__label">Имя:</span>
                 <input
                   class="form__input form__input--text"
@@ -100,7 +104,7 @@
                   placeholder="Введите ваше имя *"
                 />
               </label>
-              <label class="form__item">
+              <label class="form__fildset-item">
                 <span class="form__label">Отчество:</span>
                 <input
                   class="form__input form__input--text"
@@ -186,9 +190,11 @@
         <div class="form__item form__item--contacts">
           <div class="form__wrapper">
             <fieldset class="form__fildset">
-              <legend class="form__legend">Контактная информация</legend>
+              <legend class="form__legend">
+                Контактная информация
+              </legend>
               <div class="form__fildset-wrapper">
-                <label class="form__item">
+                <label class="form__fildset-item">
                   <span class="form__label">Номер телефона</span>
                   <input
                     class="form__input form__input--text"
@@ -197,7 +203,7 @@
                     placeholder="Номер, пожалуйста"
                   />
                 </label>
-                <label class="form__item">
+                <label class="form__fildset-item">
                   <span class="form__label">Адрес почты</span>
                   <input
                     class="form__input form__input--text"
@@ -246,32 +252,36 @@
               <legend class="form__legend">
                 Опишите свои эмоции
               </legend>
-              <textarea class="textarea">
-                Можно прям в красках, не стесняясь в выражениях
-              </textarea>
+              <div class="form__fildset-wrapper">
+                <textarea class="form__textarea">
+Можно прям в красках, не стесняясь в выражениях
+                </textarea>
+              </div>
             </fieldset>
             <button class="form__button">Отправить форму</button>
+            <p class="form__required form__required--mobile">
+              <span class="form__required-star ">*</span>
+              – обязательные поля
+            </p>
+            <p class="form__required form__required--desktop">
+              <span class="form__required-star ">*</span>
+              – Поля обязательные для заполнения
+            </p>
           </div>
         </div>
       </form>
     </main>
     <footer class="page__footer footer container">
-      <a class="footer__logo" href="/">
-        <picture>
-            <source
-            media="(min-width: 1200px)"
-            srcset="
-            img/logo-pink-blue-desktop.svg
-            "
-          />
-          <img
-            class="footer__logo-img"
-            alt="Логотип «Пинк»"
-            src="img/logo-pink-blue-mobile.svg"
-          />
-        </picture>
+      <a class="footer__logo" href="#">
+        <svg class="footer__logo--mob" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-footer--mob" />
+        </svg>
+
+        <svg class="footer__logo--des" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-footer--des" />
+        </svg>
       </a>
-      <div class="page-footer__social social">
+      <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a href="#" class="social__link social__link--tw"></a>
@@ -284,13 +294,17 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a href="https://htmlacademy.ru/" class="copyright__link">
-          <img src="img/logo-htmlacademy.svg" alt="HTML Академия" />
+          <svg class="copyright__logo" width="26.943px" height="34.09px">
+            <use xlink:href="/img/sprite.svg#logo_academy" />
+          </svg>
         </a>
       </div>
     </footer>
     <script src="js/nav.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svgxuse.min.js"></script>
   </body>
 </html>

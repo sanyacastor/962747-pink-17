@@ -12,32 +12,27 @@
       <header class="page-header">
         <div class="page-header__inner">
           <a class="page-header__logo" href="/">
-            <picture>
-              <source
-                media="(min-width: 1200px)"
-                srcset="
-                    img/logo-pink-white-desktop.svg,
-                    "
-              />
-              <source
-                media="(min-width: 660px)"
-                srcset="
-                    img/logo-pink-white-tablet.svg
-                    "
-              />
-              <img
-                class="page-header__logo-image"
-                src="img/logo-pink-white-mobile.svg"
-                alt="Логотип «Пинк»"
-                class="photo-card__img"
-                sizes="media(min-width: 320px) 80px, 150px"
-              />
-            </picture>
+            <svg class="page-header__logo--mob" width="75px" height="23px" >
+                <use xlink:href="img/sprite.svg#logo-header--mob" />
+            </svg>
+            <svg class="page-header__logo--tab" width="147px" height="41px" >
+                <use xlink:href="img/sprite.svg#logo-header--tab" />
+            </svg>
+            <svg  class="page-header__logo--des" width="147px" height="41px">
+                <use xlink:href="img/sprite.svg#logo-header--des" />
+            </svg>
           </a>
           <nav
             class="page-header__nav main-nav main-nav--opened main-nav--nojs"
           >
-            <button class="main-nav__toggle" type="button"></button>
+            <button class="main-nav__toggle" type="button">
+                <svg class="main-nav__toggle--burger"  width="49.945px" height="24.007px">
+                    <use xlink:href="img/sprite.svg#icon-burger" />
+                </svg>
+                <svg class="main-nav__toggle--cross"  width="23.867px" height="23.867px">
+                    <use xlink:href="img/sprite.svg#icon-cross" />
+                </svg>
+            </button>
             <div class="main-nav__wrapper">
               <ul class="manin-nav__list site-list">
                 <li class="site-list__item">
@@ -129,22 +124,6 @@
           </div>
         </div>
         <div class="features__wrapper">
-          <svg
-            class="features__decore"
-            version="1.0"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            width="1200px"
-            height="94.074px"
-            viewBox="0 0 1200 94.074"
-            enable-background="new 0 0 1200 94.074"
-            xml:space="preserve"
-          >
-            <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 " />
-          </svg>
           <div class="container">
             <div class="features__inner">
               <ul class="features__list">
@@ -195,17 +174,25 @@
         </div>
       </section>
       <section class="reviews slider">
+        <h2 class="visually-hidden">Отзывы</h2>
         <div class="container">
           <a href="" class="slider__button slider__button--prev"></a>
           <div class="reviews__item slider__slide">
             <p class="reviews__name">
               Николай Петров
+              <span class="reviews__age">25 лет, водитель трамвая</span>
             </p>
             <p class="reviews__comment">
-              «Это приложение перевернуло мой мир и позволило по-новому
-              взглянуть на привычные серые вещи! А еще я познакомился со своей
-              будущей женой в комментариях к выложенной фотографии!»
+              «Это приложение перевернуло мой мир и позволило по-новомувзглянуть
+              на привычные серые вещи! А еще я познакомился со своей будущей
+              женой в комментариях к выложенной фотографии!»
             </p>
+            <img
+              width="80"
+              class="reviews__quoute"
+              src="img/icon-quotes.svg"
+              alt=""
+            />
           </div>
           <a href="" class="slider__button slider__button--next"></a>
         </div>
@@ -216,27 +203,12 @@
         </div>
       </section>
       <section class="prices">
-        <svg
-          class="prices__decore"
-          version="1.0"
-          id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          width="1200px"
-          height="94.074px"
-          viewBox="0 0 1200 94.074"
-          enable-background="new 0 0 1200 94.074"
-          xml:space="preserve"
-        >
-          <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 " />
-        </svg>
+          <h2 class="visually-hidden">Тарифы</h2>
         <div class="prices__inner slider">
           <div class="container">
             <table class="prices__table table">
               <tr>
-                <td></td>
+                <td class="table__empty"></td>
                 <td class="table__header">
                   База <span class="table__price">1,99 USD</span>
                 </td>
@@ -249,45 +221,164 @@
               </tr>
               <tr>
                 <td class="table__feature">Розовый фильтр</td>
-                <td class="table__value">
-                  <img src="../../img/icon-yes.svg" alt="" />
+
+                <td class="table__value table__value--tablet">
+                  <img
+                    width="30"
+                    src="../../img/icon-yes.svg"
+                    alt=""
+                  />
                 </td>
-                <td class="table__value">
-                  <img src="../../img/icon-yes.svg" alt="" />
+                <td class="table__value table__value--mobile">
+                  Розовый фильтр
+                  <img
+                    width="30"
+                    src="../../img/icon-yes.svg"
+                    alt=""
+                  />
                 </td>
-                <td class="table__value">
-                  <img src="../../img/icon-yes.svg" alt="" />
+                <td class="table__value table__value--tablet">
+                  <img
+                    width="30"
+                    src="../../img/icon-yes.svg"
+                    alt=""
+                  />
+                </td>
+                <td class="table__value table__value--mobile">
+                  Розовый фильтр
+                  <img
+                    width="30"
+                    src="../../img/icon-yes.svg"
+                    alt=""
+                  />
+                </td>
+                <td class="table__value table__value--tablet">
+                  <img
+                    width="30"
+                    src="../../img/icon-yes.svg"
+                    alt=""
+                  />
+                </td>
+                <td class="table__value table__value--mobile">
+                  Розовый фильтр
+                  <img
+                    width="30"
+                    src="../../img/icon-yes.svg"
+                    alt=""
+                  />
                 </td>
               </tr>
               <tr>
                 <td class="table__feature">Смайлики</td>
-                <td class="table__value">
-                  <img src="../../img/icon-no.svg" alt="" />
+
+                <td class="table__value table__value--tablet">
+                  <img
+                    width="30"
+                    src="../../img/icon-no.svg"
+                    alt=""
+                  />
                 </td>
-                <td class="table__value">
-                  <img src="../../img/icon-yes.svg" alt="" />
+                <td class="table__value table__value--mobile">
+                  <span>Смайлики</span>
+                  <img
+                    width="30"
+                    src="../../img/icon-no.svg"
+                    alt=""
+                  />
                 </td>
-                <td class="table__value">
-                  <img src="../../img/icon-yes.svg" alt="" />
-                </td>
+
+                <td class="table__value table__value--tablet">
+                  <img
+                      width="30"
+                      src="../../img/icon-yes.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td class="table__value table__value--mobile">
+                    <span>Смайлики</span>
+                    <img
+                      width="30"
+                      src="../../img/icon-yes.svg"
+                      alt=""
+                    />
+                  </td>
+
+                  <td class="table__value table__value--tablet">
+                      <img
+                        width="30"
+                        src="../../img/icon-yes.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td class="table__value table__value--mobile">
+                      <span>Смайлики</span>
+                      <img
+                        width="30"
+                        src="../../img/icon-yes.svg"
+                        alt=""
+                      />
+                    </td>
+
               </tr>
               <tr>
                 <td class="table__feature">Комментарии</td>
-                <td class="table__value">
-                  <img src="../../img/icon-no.svg" alt="" />
-                </td>
-                <td class="table__value">
-                  <img src="../../img/icon-no.svg" alt="" />
-                </td>
-                <td class="table__value">
-                  <img src="../../img/icon-yes.svg" alt="" />
-                </td>
+                <td class="table__value table__value--tablet">
+                    <img
+                      width="30"
+                      src="../../img/icon-no.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td class="table__value table__value--mobile">
+                    <span>Комментарии</span>
+                    <img
+                      width="30"
+                      src="../../img/icon-no.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td class="table__value table__value--tablet">
+                      <img
+                        width="30"
+                        src="../../img/icon-no.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td class="table__value table__value--mobile">
+                      <span>Комментарии</span>
+                      <img
+                        width="30"
+                        src="../../img/icon-no.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td class="table__value table__value--tablet">
+                        <img
+                          width="30"
+                          src="../../img/icon-yes.svg"
+                          alt=""
+                        />
+                      </td>
+                      <td class="table__value table__value--mobile">
+                        <span>Комментарии</span>
+                        <img
+                          width="30"
+                          src="../../img/icon-yes.svg"
+                          alt=""
+                        />
+                      </td>
               </tr>
             </table>
+          </div>
+          <div class="slider__controls">
+            <a href="#" class="slider__dot slider__dot--active"></a>
+            <a href="#" class="slider__dot"></a>
+            <a href="#" class="slider__dot"></a>
           </div>
         </div>
       </section>
       <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
         <div class="container">
           <div class="contacts__lead">
             <p>Остались вопросы? Свяжитесь с нами!</p>
@@ -301,7 +392,7 @@
             </div>
             <div class="contacts__item">
               <span class="contacts__header">Пишите:</span>
-              <a href="mailto: mail@htmlacademy.ru" class="contacts__link"
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__link"
                 >mail@htmlacademy.ru</a
               >
             </div>
@@ -313,42 +404,20 @@
         </div>
       </section>
       <section class="map">
-        <svg
-          class="map__decore"
-          version="1.0"
-          id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          width="595.28px"
-          height="61.905px"
-          viewBox="0 0 595.28 61.905"
-          enable-background="new 0 0 595.28 61.905"
-          xml:space="preserve"
-        >
-          <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 " />
-        </svg>
-
-        <a class="map__inner"> </a>
+          <h2 class="visually-hidden">Карта проезда</h2>
+        <a class="map__inner"></a>
       </section>
-      <footer class="page__footer footer container">
+      <footer class="page__footer footer footer--mobile container">
         <a class="footer__logo" href="#">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                img/logo-pink-blue-desktop.svg
-                "
-            />
-            <img
-              class="footer__logo-img"
-              alt="Логотип «Пинк»"
-              src="img/logo-pink-blue-mobile.svg"
-            />
-          </picture>
+          <svg class="footer__logo--mob"  width="146.3px" height="40.375px">
+              <use xlink:href="img/sprite.svg#logo-footer--mob" />
+          </svg>
+
+          <svg class="footer__logo--des"  width="146.3px" height="40.375px">
+              <use xlink:href="img/sprite.svg#logo-footer--des" />
+          </svg>
         </a>
-        <div class="page-footer__social social">
+        <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link social__link--tw"></a>
@@ -361,15 +430,21 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a href="https://htmlacademy.ru/" class="copyright__link">
-            <img src="img/logo-htmlacademy.svg" alt="HTML Академия" />
+            <svg class="copyright__logo" width="26.943px" height="34.09px">
+              <use xlink:href="img/sprite.svg#logo_academy" />
+            </svg>
           </a>
         </div>
       </footer>
     </main>
+    <svg style="display: none;">
+
+    </svg>
     <script src="js/nav.js"></script>
+    <script src="js/svgxuse.min.js"></script>
     <script src="js/picturefill.js"></script>
   </body>
 </html>
