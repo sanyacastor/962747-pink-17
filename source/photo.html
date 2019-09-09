@@ -11,32 +11,28 @@
     <div class="welcome-wrapper">
       <header class="page-header">
         <div class="page-header__inner">
-          <a class="page-header__logo" href="/">
-            <picture>
-                <source
-                media="(min-width: 1200px)"
-                srcset="
-                img/logo-pink-white-desktop.svg,
-                "
-              />
-              <source
-                media="(min-width: 660px)"
-                srcset="
-                img/logo-pink-white-tablet.svg
-                "
-              />
-              <img
-                class="page-header__logo-image"
-                src="img/logo-pink-white-mobile.svg"
-                alt="Горы"
-                class="photo-card__img"
-              />
-            </picture>
-          </a>
+            <a class="page-header__logo" href="/">
+              <svg class="page-header__logo--mob" width="75px" height="23px" >
+                  <use xlink:href="img/sprite.svg#logo-header--mob" />
+              </svg>
+              <svg class="page-header__logo--tab" width="147px" height="41px" >
+                  <use xlink:href="img/sprite.svg#logo-header--tab" />
+              </svg>
+              <svg  class="page-header__logo--des" width="147px" height="41px">
+                  <use xlink:href="img/sprite.svg#logo-header--des" />
+              </svg>
+            </a>
           <nav
             class="page-header__nav main-nav main-nav--opened main-nav--nojs"
           >
-            <button class="main-nav__toggle" type="button"></button>
+          <button class="main-nav__toggle" type="button">
+              <svg class="main-nav__toggle--burger"  width="49.945px" height="24.007px">
+                  <use xlink:href="img/sprite.svg#icon-burger" />
+              </svg>
+              <svg class="main-nav__toggle--cross"  width="23.867px" height="23.867px">
+                  <use xlink:href="img/sprite.svg#icon-cross" />
+              </svg>
+          </button>
             <div class="main-nav__wrapper">
               <ul class="manin-nav__list site-list">
                 <li class="site-list__item">
@@ -134,7 +130,7 @@
                 srcset="img/panorama-mobile@2x.jpg 2x"
                 alt="Панорама дня"
                 class="photo-card__img photo-card__img--panorama"
-                width="300px"
+                width="300"
               />
             </picture>
             <div class="photo-card__text container">
@@ -202,7 +198,7 @@
                 srcset="img/photo-car-mobile@2x.jpg 2x"
                 alt="Тесла"
                 class="photo-card__img"
-                width="300px"
+                width="300"
               />
             </picture>
             <div class="photo-card__text">
@@ -265,7 +261,7 @@
                 srcset="img/photo-drumset-mobile@2x.jpg 2x"
                 alt="барабанная установка"
                 class="photo-card__img"
-                width="300px"
+                width="300"
               />
             </picture>
             <div class="photo-card__text">
@@ -328,7 +324,7 @@
                 srcset="img/photo-window-mobile@2x.jpg 2x"
                 alt="Стекляная крыша"
                 class="photo-card__img"
-                width="300px"
+                width="300"
               />
             </picture>
             <div class="photo-card__text">
@@ -391,7 +387,7 @@
                 srcset="img/photo-fair-mobile@2x.jpg 2x"
                 alt="Кубанская бахча"
                 class="photo-card__img"
-                width="300px"
+                width="300"
               />
             </picture>
 
@@ -454,7 +450,7 @@
                 srcset="img/photo-pov-mobile@2x.jpg 2x"
                 alt="Горы"
                 class="photo-card__img"
-                width="300px"
+                width="300"
               />
             </picture>
             <div class="photo-card__text">
@@ -516,7 +512,7 @@
                 srcset="img/photo-wing-mobile@2x.jpg 2x"
                 alt="Закат из окна самолета"
                 class="photo-card__img"
-                width="300px"
+                width="300"
               />
             </picture>
             <div class="photo-card__text">
@@ -536,12 +532,14 @@
         </ul>
       </section>
       <section class="lead">
+        <h2 class="visually-hidden">Слоган</h2>
         <p>
           Затмите их всех! <br />
           Выкладывайте все, что накопилось в телефоне!
         </p>
       </section>
       <section class="photo-editor">
+        <h2 class="visually-hidden">Фоторедактор</h2>
         <div class="container">
           <div class="photo-editor__inner">
             <div class="photo-editor__pic">
@@ -588,12 +586,12 @@
                     srcset="img/photo-road-mobile@2x.jpg 2x"
                     alt="Закат из окна самолета"
                     class="photo-card__img"
-                    width="300px"
+                    width="300"
                   />
-              <!-- <img src="../../img/photo-road-mobile@1x.jpg" alt="" /> -->
-            </div>
+                </picture>
+             </div>
             <div class="photo-editor__controls">
-              <form class="photo-editor__form" action="">
+              <form class="photo-editor__form" action="submit">
                 <div class="photo-editor__toolbar">
                   <div class="photo-editor__range-item">
                     <a href="" class="photo-editor__icon photo-editor__icon--crop photo-editor__icon--active">
@@ -602,7 +600,7 @@
                       </svg>
                     </a>
                     <label class="photo-editor__range-label">
-                      <input class="photo-editor__range photo-editor__range--crop" type="range" name="crop" min="1" value="50" max ="100"id="" />
+                      <input class="photo-editor__range photo-editor__range--crop" type="range" name="crop" min="1" value="50" max ="100" id="crop" />
                     </label>
                   </div>
                   <div class="photo-editor__range-item">
@@ -612,7 +610,7 @@
                       </svg>
                     </a>
                     <label class="photo-editor__range-label">
-                      <input class="photo-editor__range photo-editor__range--fill" type="range" name="fill" id="" />
+                      <input class="photo-editor__range photo-editor__range--fill" type="range" name="fill" id="fill" />
                     </label>
                   </div>
                   <div class="photo-editor__range-item">
@@ -622,7 +620,7 @@
                       </svg>
                     </a>
                     <label class="photo-editor__range-label">
-                      <input class="photo-editor__range photo-editor__range--contrast" type="range" name="contrast" id="" />
+                      <input class="photo-editor__range photo-editor__range--contrast" type="range" name="contrast" id="contrast" />
                     </label>
                   </div>
                 </div>
@@ -648,20 +646,14 @@
     </main>
     <footer class="page__footer footer container">
       <a class="footer__logo" href="#">
-        <picture>
-            <source
-            media="(min-width: 1200px)"
-            srcset="
-            img/logo-pink-blue-desktop.svg
-            "
-          />
-          <img
-            class="footer__logo-img"
-            alt="Логотип «Пинк»"
-            src="img/logo-pink-blue-mobile.svg"
-          />
-        </picture>
-      </a>
+          <svg class="footer__logo--mob"  width="146.3px" height="40.375px">
+              <use xlink:href="img/sprite.svg#logo-footer--mob" />
+          </svg>
+
+          <svg class="footer__logo--des"  width="146.3px" height="40.375px">
+              <use xlink:href="img/sprite.svg#logo-footer--des" />
+          </svg>
+        </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

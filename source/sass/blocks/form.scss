@@ -54,6 +54,8 @@
 
 .check__input,
 .radio__input {
+  visibility: hidden;
+  height: 0;
   width: 0;
   position: absolute;
 }
@@ -169,6 +171,19 @@
   background: $color-pink;
 }
 
+.form__required--desktop {
+  display: none;
+}
+
+.form__required-star {
+  color: $color-pink;
+}
+
+.form__required {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .form__button {
   cursor: pointer;
   border-radius: 3px;
@@ -180,6 +195,7 @@
   padding: 20px;
   font-size: 18px;
   font-weight: 800;
+  margin-bottom: 25px;
 
   &:hover,
   &:focus {
@@ -232,7 +248,7 @@
 }
 
 .form__item--app {
-  padding-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .form__item--comment .form__legend {
@@ -253,6 +269,10 @@
   .form__legend {
     margin: 0 auto;
     text-align: center;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .form__wrapper {
@@ -316,13 +336,6 @@
 
   .form__item--app .form__fildset {
     padding: 0 55px;
-  }
-
-  .form__legend {
-    padding-top: 10px;
-    margin-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   .radio {

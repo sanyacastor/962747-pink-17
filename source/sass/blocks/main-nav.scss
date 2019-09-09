@@ -9,41 +9,27 @@
   border: none;
   right: 10px;
   top: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav--opened .main-nav__toggle--cross {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle--burger {
+  display: none;
 }
 
 .main-nav--opened .main-nav__toggle {
+  fill: #ffffff;
   width: 50px;
-  height: 4px;
-  // background-image: url("../../img/icon-menu-burger.svg");
-  background-color: #ffffff;
+  height: 25px;
+  background-color: transparent;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 50px;
-    height: 4px;
-    top: 20px;
-    background-color: #ffffff;
-  }
-
-  &::after {
-    content: " ";
-    position: absolute;
-    width: 50px;
-    height: 4px;
-    top: 10px;
-    left: 0;
-    background-color: #ffffff;
-  }
-
-  &:hover {
-    background: $color-pink;
-
-    &::before,
-    &::after {
-      background: $color-pink;
-    }
+  &:hover,
+  &:focus {
+    fill: $color-pink;
   }
 
   &:active {
@@ -52,37 +38,13 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  width: 24px;
-  height: 24px;
+  fill: #ffffff;
+  width: 25px;
+  height: 25px;
   background-color: transparent;
 
-  &::before {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    content: " ";
-    height: 30px;
-    width: 4px;
-    background-color: #ffffff;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    content: " ";
-    height: 30px;
-    width: 4px;
-    background-color: #ffffff;
-    transform: rotate(-45deg);
-  }
-
   &:hover {
-    &::before,
-    &::after {
-      background: $color-pink;
-    }
+    fill: $color-pink;
   }
 
   &:active {

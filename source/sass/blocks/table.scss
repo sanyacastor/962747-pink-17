@@ -1,4 +1,5 @@
 .table {
+  table-layout: fixed;
   box-sizing: border-box;
   border-collapse: collapse;
 }
@@ -9,7 +10,8 @@
   background: $color-blue-dark;
   color: $color-white;
   width: 235px;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 15px;
   text-transform: uppercase;
   font-weight: 600;
   line-height: 1.6;
@@ -36,12 +38,13 @@
 
 .table__price {
   display: block;
+  font-size: 24px;
   font-weight: 300;
 }
 
 .table__feature {
+  display: none;
   border: 2px solid $color-gray-dark;
-  width: 235px;
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -49,8 +52,87 @@
 }
 
 .table__value {
-  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  width: 400px;
   background: $color-white;
   border: 2px solid $color-gray-dark;
-  border-top: none;
+  // border-top: none;
+  outline: 2px solid $color-gray-dark;
+  // border-top: none;
+}
+
+.table__value--mobile {
+  box-sizing: border-box;
+  min-width: 280px;
+  padding: 20px 0;
+  padding-left: 20px;
+}
+
+.table__value--mobile img {
+  position: absolute;
+  right: 20px;
+}
+
+.table__value--tablet {
+  display: none;
+}
+
+.table__empty {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .table__empty {
+    display: table-cell;
+  }
+
+  .table__value--tablet {
+    // padding: 10px;
+    text-align: center;
+    display: table-cell;
+  }
+
+  .table__value--mobile {
+    display: none;
+  }
+
+  .table__price {
+    font-size: 18px;
+  }
+
+  .table__header {
+    font-size: 16px;
+    min-width: 100px;
+    padding-top: 15px;
+  }
+
+  .table__feature {
+    box-sizing: border-box;
+    min-width: 150px;
+    display: table-cell;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table__header {
+    min-width: 235px;
+    padding-top: 20px;
+    // padding-bottom: 20px;
+  }
+
+  .table__feature {
+    min-width: 235px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+  }
+
+  .table__price {
+    font-size: 24px;
+  }
 }

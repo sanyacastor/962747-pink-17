@@ -52,8 +52,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .slider__controls {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .slider__button {
     display: block;
+  }
+
+  .slider__controls {
+    margin-bottom: 0;
   }
 }

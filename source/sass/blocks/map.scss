@@ -1,6 +1,36 @@
 .map {
   position: relative;
   width: 100%;
+
+  &::before {
+    z-index: 99;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 170px;
+    // height: auto;
+    background-color: transparent;
+    background-image: url("../../img/bg-triangle-white-footer.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 20px;
+  //   height: 20px;
+  //   background: #ffffff;
+  //   border: 15px solid $color-pink;
+  //   border-radius: 50%;
+  // }
+}
+
+.map svg {
+  width: 100%;
 }
 
 .map__inner {
@@ -16,19 +46,10 @@
   }
 }
 
-.map__decore {
-  z-index: 1;
-  position: absolute;
-  top: -1px;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
-
 @media (min-width: $tablet-width) {
   .map__inner {
     background-image: url("../../img/bg-map-tablet@1x.jpg");
-    min-height: 400px;
+    min-height: 370px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/bg-map-tablet@2x.jpg");
@@ -38,8 +59,9 @@
 
 @media (min-width: $desktop-width) {
   .map__inner {
+    min-height: 520px;
+
     background-image: url("../../img/bg-map-desktop@1x.jpg");
-    // min-height: 400px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/bg-map-desktop@2x.jpg");
