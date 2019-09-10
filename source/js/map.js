@@ -1,6 +1,6 @@
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-           center: [55.686980, 37.529654],
+           center: [59.93561270667738, 30.327544212341312],
             zoom: 16,
             controls: ['zoomControl']
         }, {
@@ -11,7 +11,7 @@ ymaps.ready(function () {
             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
 
-        myPlacemark = new ymaps.Placemark([55.686980, 37.529654], {
+        myPlacemark = new ymaps.Placemark([59.93561270667738, 30.327544212341312], {
             hintContent: 'Улица строителей 15',
             balloonContent: 'Магазин Девайс'
         }, {
