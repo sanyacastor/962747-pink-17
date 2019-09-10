@@ -1,0 +1,85 @@
+.check__input {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+.check__box {
+  width: 1em;
+  height: 1em;
+}
+
+.check {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  color: $color-blue-dark;
+  margin-left: 70px;
+  margin-bottom: 57px;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border: 2px solid $color-gray-dark;
+    left: -70px;
+    top: -8px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid $color-blue-dark;
+  }
+
+  &:active::before {
+    border: 2px solid $color-pink;
+  }
+}
+
+.check__input:checked + .check__box::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: -55px;
+  top: -3px;
+  width: 10px;
+  height: 20px;
+  border: solid $color-pink;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+@media (min-width: $tablet-width) {
+  .radio {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__item--achivement .check {
+    position: relative;
+    width: 200px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+  }
+
+  .form__item--achivement .check:nth-child(6) {
+    order: 4;
+  }
+
+  .form__item--achivement .check:nth-child(4) {
+    order: 3;
+  }
+
+  .form__item--achivement .check:nth-child(2) {
+    order: 2;
+  }
+}

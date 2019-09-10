@@ -8,7 +8,7 @@
 
 .effect__header {
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .effect__text,
@@ -53,7 +53,7 @@
     &::after {
       content: "24";
       font-size: 96px;
-      font-weight: 800;
+      font-weight: 700;
       color: $color-pink;
       position: absolute;
       top: 86px;
@@ -103,7 +103,7 @@
     &::after {
       content: "24";
       font-size: 120px;
-      font-weight: 800;
+      font-weight: 700;
       color: $color-pink;
       position: absolute;
       top: 110px;

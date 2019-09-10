@@ -1,0 +1,121 @@
+.modal {
+  box-sizing: border-box;
+  text-align: center;
+  width: 320px;
+  background: #ffffff;
+  z-index: 99;
+  position: absolute;
+  left: calc(50% - 160px);
+  top: 50vh;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.modal__header {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.modal__text {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.modal__button {
+  background: $color-green;
+  max-width: 300px;
+  padding: 20px 35px;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+
+  &:hover,
+  &:focus {
+    background: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+.modal--error .modal__button-wrapper {
+  padding-top: 45px;
+  background: $color-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    text-align: center;
+    width: 460px;
+    padding: 0;
+    left: calc(50% - 230px);
+  }
+
+  .modal__text {
+    margin: 0 auto;
+    width: 300px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .modal__header {
+    padding-top: 35px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 300px;
+    font-size: 30px;
+  }
+
+  .modal__button-wrapper {
+    padding-top: 45px;
+    background: $color-gray;
+  }
+
+  .modal__button {
+    max-width: 400px;
+    padding: 20px 80px;
+  }
+
+  .modal--sucess .modal__button-wrapper {
+    background: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    padding: 0;
+    width: 780px;
+    left: calc(50% - 390px);
+  }
+
+  .modal__text {
+    margin: 0 auto;
+    width: 400px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+
+  .modal__button {
+    max-width: 500px;
+    padding: 20px 130px;
+    margin-bottom: 55px;
+  }
+
+  .modal__button-wrapper {
+    padding-top: 45px;
+    background: $color-gray;
+  }
+
+  .modal--sucess .modal__button-wrapper {
+    background: $color-gray;
+  }
+}

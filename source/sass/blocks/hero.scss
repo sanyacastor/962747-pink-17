@@ -19,7 +19,7 @@
 }
 
 .hero__image {
-  align-self: flex-start;
+  // align-self: flex-start;
   width: 260px;
   height: 290px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -28,6 +28,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: cover;
   }
 }
 
@@ -54,7 +55,7 @@
   color: $color-white;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 30px;
   margin-top: 25px;
 

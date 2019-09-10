@@ -10,52 +10,72 @@
   <body class="page">
     <div class="welcome-wrapper">
       <header class="page-header">
-        <div class="page-header__inner">
+          <div class="page-header__inner">
             <a class="page-header__logo" href="/">
-              <svg class="page-header__logo--mob" width="75px" height="23px" >
-                  <use xlink:href="img/sprite.svg#logo-pink-white-mobile" />
+              <svg
+                class="page-header__logo-img page-header__logo-img--mob"
+                width="75px"
+                height="23px"
+              >
+                <use xlink:href="img/sprite.svg#logo-pink-white-mobile" />
               </svg>
-              <svg class="page-header__logo--tab" width="147px" height="41px" >
-                  <use xlink:href="img/sprite.svg#logo-pink-white-tablet" />
+              <svg
+                class="page-header__logo-img page-header__logo-img--tab"
+                width="147px"
+                height="41px"
+              >
+                <use xlink:href="img/sprite.svg#logo-pink-white-tablet" />
               </svg>
-              <svg  class="page-header__logo--des" width="147px" height="41px">
-                  <use xlink:href="img/sprite.svg#logo-pink-white-desktop" />
+              <svg
+                class="page-header__logo-img page-header__logo-img--des"
+                width="147px"
+                height="41px"
+              >
+                <use xlink:href="img/sprite.svg#logo-pink-white-desktop" />
               </svg>
             </a>
-          <nav
-            class="page-header__nav main-nav main-nav--opened main-nav--nojs"
-          >
-          <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__toggle--burger"  width="49.945px" height="24.007px">
-                <use xlink:href="img/sprite.svg#icon-menu-burger" />
-            </svg>
-            <svg class="main-nav__toggle--cross"  width="23.867px" height="23.867px">
-                <use xlink:href="img/sprite.svg#icon-menu-cross" />
-            </svg>
-          </button>
-            <div class="main-nav__wrapper">
-              <ul class="manin-nav__list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="index.html">Главная</a>
-                </li>
-                <li class="site-list__item site-list__item--active">
-                  <a class="site-list__link">Фотографии</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="form.html">Конкурс</a>
-                </li>
-                <li class="site-list__item">
-                  <a
-                    class="site-list__link"
-                    href="https://up.htmlacademy.ru/"
-                    target="blank"
-                    >HTML Academy</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+            <nav
+              class="page-header__nav main-nav main-nav--opened main-nav--nojs"
+            >
+              <button class="main-nav__toggle" type="button">
+                <svg
+                  class="main-nav__toggle-icon main-nav__toggle-icon--burger"
+                  width="49px"
+                  height="24px"
+                >
+                  <use xlink:href="img/sprite.svg#icon-menu-burger" />
+                </svg>
+                <svg
+                  class="main-nav__toggle-icon main-nav__toggle-icon--cross"
+                  width="23px"
+                  height="23px"
+                >
+                  <use xlink:href="img/sprite.svg#icon-menu-cross" />
+                </svg>
+              </button>
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                  <li class="site-list__item">
+                    <a class="site-list__link">Главная</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link site-list__link--active" href="photo.html">Фотографии</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="form.html">Конкурс</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a
+                      class="site-list__link"
+                      href="https://up.htmlacademy.ru/"
+                      target="blank"
+                      >HTML Academy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
       </header>
 
       <section class="hero hero--photo">
@@ -89,7 +109,7 @@
             <picture>
               <source
                 type='image/webp'
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/panorama-desktop@1x.webp 1x,
                   img/panorama-desktop@2x.webp 2x
@@ -112,7 +132,7 @@
               />
 
               <source
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/panorama-desktop@1x.jpg 1x,
                   img/panorama-desktop@2x.jpg 2x
@@ -157,7 +177,7 @@
             <picture>
                 <source
                 type='image/webp'
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-car-desktop@1x.webp 1x,
                   img/photo-car-desktop@2x.webp 2x
@@ -180,7 +200,7 @@
               />
 
               <source
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-car-desktop@1x.jpg 1x,
                   img/photo-car-desktop@2x.jpg 2x
@@ -220,7 +240,7 @@
             <picture>
                 <source
                 type='image/webp'
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-drumset-desktop@1x.webp 1x,
                   img/photo-drumset-desktop@2x.webp 2x
@@ -243,7 +263,7 @@
               />
 
               <source
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-drumset-desktop@1x.jpg 1x,
                   img/photo-drumset-desktop@2x.jpg 2x
@@ -283,7 +303,7 @@
             <picture>
                 <source
                 type='image/webp'
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-window-desktop@1x.webp 1x,
                   img/photo-window-desktop@2x.webp 2x
@@ -306,7 +326,7 @@
               />
 
               <source
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-window-desktop@1x.jpg 1x,
                   img/photo-window-desktop@2x.jpg 2x
@@ -346,7 +366,7 @@
             <picture>
                 <source
                 type='image/webp'
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-fair-desktop@1x.webp 1x,
                   img/photo-fair-desktop@2x.webp 2x
@@ -369,7 +389,7 @@
               />
 
               <source
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-fair-desktop@1x.jpg 1x,
                   img/photo-fair-desktop@2x.jpg 2x
@@ -410,7 +430,7 @@
             <picture>
                 <source
                 type='image/webp'
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-pov-desktop@1x.webp 1x,
                   img/photo-pov-desktop@2x.webp 2x
@@ -432,7 +452,7 @@
                   "
               />
               <source
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-pov-desktop@1x.jpg 1x,
                   img/photo-pov-desktop@2x.jpg 2x
@@ -472,7 +492,7 @@
             <picture>
                 <source
                 type='image/webp'
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-wing-desktop@1x.webp 1x,
                   img/photo-wing-desktop@2x.webp 2x
@@ -494,7 +514,7 @@
                   "
               />
               <source
-                media="(min-width: 1200px)"
+                media="(min-width: 960px)"
                 srcset="
                   img/photo-wing-desktop@1x.jpg 1x,
                   img/photo-wing-desktop@2x.jpg 2x
@@ -544,9 +564,9 @@
           <div class="photo-editor__inner">
             <div class="photo-editor__pic">
                 <picture>
-                    <source
+                  <source
                     type='image/webp'
-                    media="(min-width: 1200px)"
+                    media="(min-width: 960px)"
                     srcset="
                       img/photo-road-desktop@1x.webp 1x,
                       img/photo-road-desktop@2x.webp 2x
@@ -568,7 +588,7 @@
                       "
                   />
                   <source
-                    media="(min-width: 1200px)"
+                    media="(min-width: 960px)"
                     srcset="
                       img/photo-road-desktop@1x.jpg 1x,
                       img/photo-road-desktop@2x.jpg 2x
@@ -584,8 +604,7 @@
                   <img
                     src="img/photo-road-mobile@1x.jpg"
                     srcset="img/photo-road-mobile@2x.jpg 2x"
-                    alt="Закат из окна самолета"
-                    class="photo-card__img"
+                    alt="Зимняя дорога"
                     width="300"
                   />
                 </picture>
@@ -645,16 +664,24 @@
       </section>
     </main>
     <footer class="page__footer footer container">
-      <a class="footer__logo" href="#">
-          <svg class="footer__logo--mob"  width="146.3px" height="40.375px">
+        <a class="footer__logo" href="#">
+            <svg
+              class="footer__logo-img footer__logo-img--mob"
+              width="146px"
+              height="40px"
+            >
               <use xlink:href="img/sprite.svg#logo-pink-blue-mobile" />
-          </svg>
+            </svg>
 
-          <svg class="footer__logo--des"  width="146.3px" height="40.375px">
+            <svg
+              class="footer__logo-img footer__logo-img--des"
+              width="146px"
+              height="40px"
+            >
               <use xlink:href="img/sprite.svg#logo-pink-blue-desktop" />
-          </svg>
-        </a>
-      <div class="page-footer__social social">
+            </svg>
+          </a>
+      <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a href="#" class="social__link social__link--tw"></a>
@@ -667,7 +694,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a href="https://htmlacademy.ru/" class="copyright__link">
           <svg class="copyright__logo" width="26.943px" height="34.09px">
