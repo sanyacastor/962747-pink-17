@@ -316,7 +316,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url("../../img/icon-phone.svg");
+      background-image: url("../img/icon-phone.svg");
       background-size: 25px;
       background-position: 50% 50%;
       background-repeat: no-repeat;
@@ -325,7 +325,7 @@
 
   .form__item--contacts .form__fieldset-item:nth-child(2) {
     &::after {
-      background-image: url("../../img/icon-mail.svg");
+      background-image: url("../img/icon-mail.svg");
     }
   }
 
