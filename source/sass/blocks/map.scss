@@ -7,30 +7,15 @@
     content: "";
     display: block;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 100%;
-    min-height: 170px;
-    // height: auto;
+    padding-bottom: 80px;
     background-color: transparent;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-size: 100%;
     background-repeat: no-repeat;
   }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 20px;
-  //   height: 20px;
-  //   background: #ffffff;
-  //   border: 15px solid $color-pink;
-  //   border-radius: 50%;
-  // }
-}
-
-.map svg {
-  width: 100%;
 }
 
 .map__inner {
@@ -47,6 +32,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map {
+    &::before {
+      padding-bottom: 80px;
+      background-size: 100% 100%;
+    }
+  }
+
   .map__inner {
     background-image: url("../img/bg-map-tablet@1x.jpg");
     min-height: 370px;
@@ -58,6 +50,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .map {
+    &::before {
+      padding-bottom: 120px;
+      background-size: 100% 100%;
+    }
+  }
+
   .map__inner {
     min-height: 520px;
 

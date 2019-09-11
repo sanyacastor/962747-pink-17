@@ -56,13 +56,6 @@
   transform: rotate(45deg);
 }
 
-@media (min-width: $tablet-width) {
-  .radio {
-    text-align: left;
-    margin-bottom: 50px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .form__item--achivement .check {
     position: relative;

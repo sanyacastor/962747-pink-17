@@ -342,11 +342,3 @@
     background: $color-pink;
   }
 }
-
-input:focus::-ms-fill-lower {
-  background: transparent;
-}
-
-input:focus::-ms-fill-upper {
-  background: transparent;
-}
