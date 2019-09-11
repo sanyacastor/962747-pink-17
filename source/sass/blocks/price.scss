@@ -29,11 +29,11 @@
 @media (min-width: $tablet-width) {
   .prices {
     position: relative;
-    padding-top: 140px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 65px;
 
     &::before {
-      padding-bottom: 80px;
+      padding-bottom: 50px;
     }
   }
 
@@ -43,5 +43,17 @@
 
   .prices__inner .slider__controls {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prices {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 90px;
+
+    &::before {
+      padding-bottom: 80px;
+    }
   }
 }

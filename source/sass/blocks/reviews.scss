@@ -26,6 +26,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-top: 0;
+    margin-bottom: 20px;
   }
 
   .reviews__item {
@@ -52,6 +53,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
   .reviews__quoute {
     display: inline-block;
     align-self: center;

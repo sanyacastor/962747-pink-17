@@ -60,6 +60,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 15px;
+  }
+
   .contacts__wrapper {
     display: flex;
     flex-direction: row;

@@ -28,7 +28,8 @@ gulp.task("css-nano", function(){
     .pipe(cssnano())
     .pipe(rename("style.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("./build/css"));
+    .pipe(gulp.dest("./build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function () {
@@ -95,7 +96,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css-nano", "refresh"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css-nano"));
   gulp.watch("source/img/*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
